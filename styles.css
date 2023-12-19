@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgba(165, 42, 42, 0.888); */
+    background-color: #a52a2ae2;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+}
+#categoryName{
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#logoandname{
+    width: 150px;
+}
+#buttons{
+    display: flex;
+}
+#logoandname{
+    display: flex;
+}
+#webpagebrief-container{
+    padding: 10px;
+    background-color: rgba(165, 42, 42, 0.651);
+    color: white;
+    border: 1px solid white;
+}
+#webpagebrief{
+    text-align: center;
+    padding: 10px;
+}
+#randomfoodimage-container{
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+.caption,.dishesname{
+    /* background-color: rgba(255, 255, 255,0.5); */
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 20px; 
+    text-align: center;
+}
+#image{
+    background-color: rgba(255, 255, 255,0.5);
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+}
+#randomfoodquote{
+    height: auto;
+    width: 300px;
+    color: white;
+}
+#quote{
+    font-size: 40px;
+}
+#by{
+    font-size: 20px; 
+}
+#categories-container{
+    height: 100px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255,0.5);
+    border: 1px solid white;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    height: 50%;
+    width: 50%;
+}
+#mega{
+    background-image: url(assets/g15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mini{
+    background-image: url(assets/Group17.png);
+    height: fit-content;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    background-color: rgba(165, 42, 42,0.5);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+#megamini{
+    background-size: cover;
+}
+#randomfoodimage{
+    cursor: pointer;
+    border-radius: 20%;
+    height: 350px;
+    width: 350px;
+}
+#dishes-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+}
+.dishesbycategory{
+    height: 350px;
+    width: 350px;
+}
+.dishes{
+    display: flex;
+    flex-direction: column;
+}
+#modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    max-width: 90%; 
+    max-height: 90%; 
+    overflow-y: auto;
+    border-radius: 10px;
+}
+#nav-container,#nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#closebuttoncontainer{
+    width: 250px;
+    display: flex;
+    justify-content: right;
+}
+h2{
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+p{
+    margin: 10px;
+}
+#refresh{
+    cursor: pointer;
+}
+#ingredientsandinstructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closeModal{
+    cursor: pointer;
+    /* position: absolute;
+    bottom: 10px;
+    right: 10px; */
+}
+#dishes-container{
+    display: grid;
+    grid-template-columns: repeat((4,1fr));
+    grid-gap: 40px;
+}
+.dishesIMG{
+    border: 1px solid white;
+    border-radius: 20%;
+    height: 300px;
+    width: 300px;
+}
+
+/* CSS for Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+#categories-container{
+    display: none;
+    background-color: rgba(165, 42, 42, 0.651);
+    position: sticky;
+    top:0;
+}
+/* Suitable for screens of iPhone 14 PRO max or pixel 7 */
+@media(max-width:480px){
+    /* body{
+        width: 80%;
+        height: auto;
+    } */
+    img{
+        height: auto ;
+        max-width:100% ;
+    }
+    #image,#randomfoodimage{
+        width: 175px;
+        height: 175px;
+    }
+    #randomfoodimage-container{
+        height: 50%;
+        width: 80%;
+
+    }
+    #randomfoodquote{
+        height: auto;
+        width: 300px;
+    }
+    #quote{
+        font-size: 20px;
+    }
+    #dishes-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .dishesIMG{
+        /* width: 175px;
+        height: 175px; */
+        height: auto ;
+        max-width:150px ;
+    }
+
+
+}
