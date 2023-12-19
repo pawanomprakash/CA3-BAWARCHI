@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+     <div id="mega">
+            <div id="megamini">
+        <div id="nav-container">
+            <nav id="nav">
+                <div id="logoandname">
+                    <img id="logo" src="assets/white-chef-hat-transparent-png.webp" alt="logo">
+                    <h3>Bawarchi</h3>
+                </div>
+                <div id="searchbar">
+                    <div id="searchbar">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Select an Category</button>
+                            <div id="searchDropdown" class="dropdown-content">
+                                <a href="#">Beef</a>
+                                <a href="#">Chicken</a>
+                                <a href="#">Dessert</a>
+                                <a href="#">Lamb</a>
+                                <a href="#">Pasta</a>
+                                <a href="#">Pork</a>
+                                <a href="#">Seafood</a>
+                                <a href="#">Side</a>
+                                <a href="#">Starter</a>
+                                <a href="#">Vegan</a>
+                                <a href="#">Vegetarian</a>
+                                <a href="#">Breakfast</a>
+                                <a href="#">Goat</a>
+                                <a href="#">Miscellaneous</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </nav>
+        </div>
+    <div id="content-container">
+    <div id="webpagebrief-container">
+        <div id="webpagebrief">
+            <p>Bawarchi is an immersive online platform that tantalizes your taste buds with a rich array of savory delights and culinary inspirations. Our website is a haven for food enthusiasts, offering a diverse collection of delectable recipes spanning various cuisines and categories. Discovering new dishes is made simple with our intuitive dropdown menu, allowing you to explore recipes based on specific categories. Dive into the world of flavors as you explore our extensive collection of mouthwatering meals.</p>
+        </div>
+    </div>
+</div>
+    <div id="randomfoodimage-container">
+        <div id="imageandcaption"> 
+            <div id="image">
+                <img src="assets/foodbuffering.png" id="randomfoodimage" alt="randomfoodimage">
+            </div>
+            <div class="caption">
+            <caption ><span class="foodname">Random food </span> <span id="refresh">🔄</span></caption>
+            </div>
+        </div>
+        <div id="randomfoodquote">
+            <p><span id="quote">Laughter is brightest in the place where food is good.</span>
+<br><br>
+                <span id="by"> -Irish Proverb</p></span>
+        </div>
+
+        <div id="modal" class="flip-animation">
+            <h2><span class="foodname">ssdfgh</span></h2>
+            <div id="ingredientsandinstructions">
+            <div>
+                <p>Ingredients list</p>
+                <div id="ingredients"></div>
+               <div id="closebuttoncontainer"><button id="closeModal">Close</button></div>
+            </div>
+            <div>
+                <p></p>
+            </div>
+         </div>
+
+            
+        </div>
+    </div>
+
+    </div>
+</div>
+<div id="mini">
+    <div id="categories-container">
+        <p id="categoryName">Category</p>
+    </div>
+
+    <div id="dishes-container">
+        
+    </div>
+
+</div>
+</div>
+
+<div id="footer">
+    <p>
+    Made by Pawan 🍽
+    </p>
+</div>
+    <script src="app.js"> </script>
+</body>
+</html>
